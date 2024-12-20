@@ -1,0 +1,6 @@
+[submodule "pcb/lib/marbastlib"]
+	path = pcb/lib/marbastlib
+	url = https://github.com/ebastler/marbastlib.git
+[submodule "pcb/lib/kiswitch"]
+	path = pcb/lib/kiswitch
+	url = https://github.com/kiswitch/kiswitch.git

@@ -1,0 +1,13 @@
+* Carpo
+
+** Case
+*** BOM
+| Component                       | Quantity |
+|---------------------------------+----------|
+| M2 Countersunk screw 8mm or 7mm |        8 |
+| M2 Nut                          |        8 |
+| Left Top case                   |        1 |
+| Left Bottom case                |        1 |
+| Right top case                  |        1 |
+| Right bottom case               |        1 |
+|---------------------------------+----------|

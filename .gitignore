@@ -1,0 +1,8 @@
+.DS_Store
+bak
+.direnv
+.venv
+*.blend1
+*.blend
+pcb/left/carpo_left-backups/
+pcb/right/carpo_right-backups/
