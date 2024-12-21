@@ -1,8 +1,31 @@
-* Carpo
+#+BEGIN_HTML html
+<picture align="center">
+  <source media="(prefers-color-scheme: dark)" srcset="/assets/carpo_logo_dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="/assets/carpo_logo_light.svg">
+  <img alt="carpo logo" src="/assets/carpo_logo_light.svg">
+</picture>
+#+END_HTML
 
 Carpo is a 36 keys, low profile, choc spaced, split keyboard.
 
 It features kailh choc v1 switches, a 200mah battery, status led and a thin and sleek case.
+
+#+BEGIN_HTML html
+<img alt="carpo both" src="/assets/carpo_both.jpg">
+<details>
+<summary>More photos</summary>
+<img alt="carpo bottom" src="/assets/carpo_bottom.jpg">
+<img alt="carpo single" src="/assets/carpo_single.jpg">
+<p>The case is printed in JLCPCB using the 8001 resin</p>
+<p>The keycaps are Pseudoku's Chicago Stenographer, printed in JLCPCB using the JLC black resin.</p>
+
+<h2>PCB renders</h2>
+<img alt="carpo pcb render top" src="/assets/carpo_pcb_render_top.png">
+<img alt="carpo pcb render bottom" src="/assets/carpo_pcb_render_bottom.png">
+</details>
+#+END_HTML
+
+The blue status LED will blink showing the Bluetooth status, if it's breathing it's disconnected. After connecting, it will blink a number of times, corresponding to the index of the current Bluetooth profile (profile 0 will blink 1 time, profile 1, 2 times, etc.)
 
 ** PCB
 
@@ -82,9 +105,14 @@ To solder the cable included in the BOM to the battery, you can solder the cable
 ** Firmware
 *** Bootloader
 
-Carpo uses the Adafruit nRF52 Bootloader. You can get it in this [[https://github.com/toniz4/Adafruit_nRF52_Bootloader][fork]]. The nrfmicro wiki has a great section on flashing the bootloader, you can get it [[https://github.com/joric/nrfmicro/wiki/Bootloader][here]], but following the build and flash sections of the Adafruit repo worked well for me. I used a rpi pico flashed with [[https://github.com/raspberrypi/debugprobe][debugprobe]].
+Carpo uses the Adafruit nRF52 Bootloader. You can get it in this [[https://github.com/toniz4/Adafruit_nRF52_Bootloader][fork]]. The nrfmicro wiki
+has a great section on flashing the bootloader, you can get it [[https://github.com/joric/nrfmicro/wiki/Bootloader][here]], but following the
+build and flash sections of the Adafruit repo worked well for me. I used a rpi pico
+flashed with [[https://github.com/raspberrypi/debugprobe][debugprobe]]. The SWD pins are accessible at the top of the PCB.
 
-After flashing the bootloader, you should be able to double press the reset button to enter in the bootloader mode, the blue status LED should breathe and it should appear as a flash drive in your computer.
+After flashing the bootloader, you should be able to double press the reset button to
+enter in the bootloader mode, the blue status LED should breathe and it should appear as a
+flash drive in your computer.
 
 *** ZMK
 
@@ -94,8 +122,10 @@ The layout is pretty barebones, so customize as you wish. In the ~personal~ bran
 
 ** Credits and inspirations
 
+It's thanks to various open source projects that I was able to make the Carpo keyboard.
+
 - [[https://github.com/GEIGEIGEIST/TOTEM][TOTEM]]: Layout inspirations.
-- [[https://github.com/yumagulovrn/dao-choc-ble?tab=readme-ov-file][Dao Choc BLE]]: Schematic design.
+- [[https://github.com/yumagulovrn/dao-choc-ble?tab=readme-ov-file][Dao Choc BLE]]: Schematic design and PCB Layout.
 - [[https://github.com/cacheworks/Wubbo][Wubbo]]: Schematic design.
 - [[https://github.com/joric/nrfmicro][nRFMicro]] Schematic design and documentation, if it weren't for the nRFMicro documentation, this project wouldn't be possible.
-- [[https://lowprokb.ca/products/corne-ish-zen][Corne-ish Zen]]: Case design.
+- [[https://lowprokb.ca/products/corne-ish-zen][Corne-ish Zen]]: Case design and PCB Layout.
