@@ -6,7 +6,7 @@
 </picture>
 #+END_HTML
 
-Carpo is a 36 keys, low profile, choc spaced, split keyboard.
+Carpo is a 36 keys, low profile, choc spaced, split keyboard. Based on the Holyiot 18010 BLE module.
 
 It features kailh choc v1 switches, a 200mah battery, status led and a thin and sleek case.
 
